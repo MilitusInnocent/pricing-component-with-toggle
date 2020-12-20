@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Frontend Mentor | Pricing Component With Toggle</title>
-    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <h1 class="heading">Our Pricing</h1>
@@ -22,48 +21,53 @@
     </div>
 
     <div class="pricing__cards__container">
-        <article class="pricing__card pricing__card____white pricing__card____left">
+        <article class="pricing__card">
             <h2 class="pricing__card__title">Basic</h2>
-            <div class="pricing__card__price" id="price__basic">
-                <span class="pricing__card__price__dollar__sign">&dollar;</span>
-                <span class="pricing__card__price__number">19.99</span>
+            <div class="pricing__card__price">
+                <span class="dollar">&dollar;</span>
+                <span class="monthly hidden">19.99</span>
+                <span class="yearly">199.9</span>
             </div>
             <ul class="pricing__card__features">
                 <li class="pricing__card__feature">500 GB Storage</li>
                 <li class="pricing__card__feature">2 Users Allowed</li>
                 <li class="pricing__card__feature">Send up to 3 GB</li>
             </ul>
-            <button class="btn btn____blue pricing__card__btn">Learn More</button>
+            <button class="btn">Learn More</button>
         </article>
 
-        <article class="pricing__card pricing__card____blue pricing__card____middle">
+        <article class="pricing__card pricing__card__middle">
             <h2 class="pricing__card__title">Professional</h2>
-            <div class="pricing__card__price" id="price__prof">
-                <span class="pricing__card__price__dollar__sign">&dollar;</span>
-                <span class="pricing__card__price__number">24.99</span>
+            <div class="pricing__card__price">
+                <span class="dollar">&dollar;</span>
+                <span class="monthly hidden">24.99</span>
+                <span class="yearly">249.9</span>
             </div>
             <ul class="pricing__card__features">
                 <li class="pricing__card__feature">1 TB Storage</li>
                 <li class="pricing__card__feature">5 Users Allowed</li>
                 <li class="pricing__card__feature">Send up to 10 GB</li>
             </ul>
-            <button class="btn btn____white pricing__card__btn">Learn More</button>
+            <button class="btn btn__white">Learn More</button>
         </article>
 
-        <article class="pricing__card pricing__card____white pricing__card____right">
+        <article class="pricing__card">
             <h2 class="pricing__card__title">Master</h2>
-            <div class="pricing__card__price" id="price__master">
-                <span class="pricing__card__price__dollar__sign">&dollar;</span>
-                <span class="pricing__card__price__number">39.99</span>
+            <div class="pricing__card__price">
+                <span class="dollar">&dollar;</span>
+                <span class="monthly hidden">39.99</span>
+                <span class="yearly">399.9</span>
             </div>
             <ul class="pricing__card__features">
                 <li class="pricing__card__feature">2 TB Storage</li>
                 <li class="pricing__card__feature">10 Users Allowed</li>
                 <li class="pricing__card__feature">Send up to 20 GB</li>
             </ul>
-            <button class="btn btn--blue pricing__card__btn">Learn More</button>
+            <button class="btn">Learn More</button>
         </article>
     </div>
+
+    <script src="script.js"></script>
 
     <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/MilitusInnocent" target="_blank">Militus</a>.</p>
 </body>
